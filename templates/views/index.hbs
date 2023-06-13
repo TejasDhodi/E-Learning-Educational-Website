@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Educational Website</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mediaQueries/media.css">
+    <script src="https://kit.fontawesome.com/23de7712d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navigation__bar">
+            <div class="nav__brand">
+                <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="nav__controls ">
+                <div id="nav__close">X</div>
+
+                <ul class="nav__items ">
+                    <li class="nav__link" onclick="window.location.href=' #header'">Home</li>
+                    <li class="nav__link" id="aboutsection">About</li>
+                    <li class="nav__link" onclick="window.location.href='#couses'"> Course</li>
+                    <li class="nav__link" onclick="window.location.href='/contact/contact.html'">  Contact</li>
+                    <li class="nav__link" id="log">  Log-in</li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="home__details">
+                <div class="home__description">
+                    <div class="home__title">
+                        <h2>Enhance Your Futute With NewEngineers</h2>
+                        <p> Always remember that you are absolutely unique. Just like everyone else. </p>
+                    </div>
+
+                    <div class="btn">
+                        <a class="blue" href="#">Learn More</a>
+                        <a class="yellow" href=" ">Visit Course</a>
+                    </div>
+                </div>
+
+                <!-- <div class="home__image">
+                    <img src="images/Green Desk Lamp.G03.watermarked.2k.png" alt="">
+                </div> -->
+            </div>
+
+        </section>
+
+
+    </header>
+
+    <section id="couses">
+
+        <div class="course__title">
+            <h1>Courses We Offer</h1>
+            <p>Get any of these premium courses absolutely free</p>
+        </div>
+
+        <div class="course__container">
+            <div class="course__card">
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/c1.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>JavaScript Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/c2.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>CSS Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/c3.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>Python Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/reactjs.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>React.js Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/SQL.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>SQL Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/c4.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>Java Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/c5.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>C Beginner Courses</h3>
+                    </div>
+                </div>
+                
+                <div class="course__card__body">
+                    <div class="course__card__image">
+                        <img src="/images/images/c6.jpg" alt="">
+                    </div>
+
+                    <div class="course__card__details">
+                        <h3>Angular Beginner Courses</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="get__course">
+                <button type="button" id="get_course">Get Course</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    {{>main}}
+
+    {{>footer}}
+
+
+    <script  src="index.js"></script>
+</body>
+
+</html>

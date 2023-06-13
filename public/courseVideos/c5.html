@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online CSE Courses</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/course.css">
+        <link rel="stylesheet" href="/mediaQueries/media.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/23de7712d8.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navigation__bar navbar">
+            <div class="nav__brand">
+                <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="nav__controls ">
+                <div id="nav__close">X</div>
+    
+                <ul class="nav__items ">
+                    <li class="nav__link" onclick="window.location.href=' /home'">Home</li>
+                    <li class="nav__link" onclick="window.location.href='#header'"> Course</li>
+                    <li class="nav__link" onclick="window.location.href='/contact/contact.html'"> Contact</li>
+                    <li class="nav__link" onclick="window.location.replace('http://localhost:3000/')"> Log-out</li>
+                </ul>
+            </div>
+            <div class="hamburger ">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        
+        
+        
+        
+        
+        
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+
+        <footer>
+            <div class="footer-col">
+                <h3 class="fh3">Advantage</h3>
+                <li>Easy To Use</li>
+                <li>Provides Best Resourses</li>
+                <li>Best Tutors</li>
+                <li>Open Source</li>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="fh3">Features</h3>
+                <li>Available For Mobile and Desktop both user</li>
+                <li>Optimized For Search and Social Web</li>
+                <li>Quality Content</li>
+                <li>Well Designed and Functional</li>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="fh3">Social Media</h3>
+                <li><a href="">Instagram</a></li>
+                <li><a href=""> Facebook</a></li>
+                <li><a href="">Linkedin</a></li>
+            </div>
+            <div class="footer-col">
+                <h3 class="fh3">NewsLetter</h3>
+                <form action="" class="News">
+                    <input type="email" name="" id="" placeholder="Your email address">
+                    <input type="submit" value="Subscribe" class="yellow">
+                </form>
+            </div>   
+            
+            <div class="copyright">
+                <p>copyright @2022 all rights reserved | This Is made by NewEngineers!</p>
+            </div>
+        </footer>
+
+        <script>
+            
+            $('#menu-btn').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+        
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+        </script>
+
+    </body>
+</html>

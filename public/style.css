@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand&family=Ubuntu+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(124, 123, 123, 0.473);
+    filter: blur(5px);
+    z-index: -1;
+    transition: 1000ms ease;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(9, 5, 0, 2), rgba(2, 5, 32, 1));
+}
+
+.navigation__bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 15px;
+}
+
+#nav__close {
+    display: none;
+}
+
+.nav__brand {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.nav__brand:hover {
+    cursor: pointer;
+    transform: rotate3d(360);
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.nav__link {
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+.nav__items .nav__link:hover {
+    padding: 10px 0;
+    color: #117ba6;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transition: 1000ms ease;
+    cursor: pointer;
+}
+
+#home {
+    color: #fff;
+    background-image: url("images/png/baground.png.png");
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.home__details {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.home__title h2 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.home__title p {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.btn a {
+    padding: 10px 12px;
+    color: #1e17e8;
+    background-color: rgb(183, 225, 255);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.home__image {
+    width: 100%;
+    height: 100%;
+}
+
+.home__image img {
+    width: 30%;
+    height: 30%;
+}
+
+/* Log-in Form */
+
+.reg__log {
+    position: absolute;
+    top: -50rem;
+    left: 40rem;
+    width: 22%;
+    color: #01062c;
+    background-color: aliceblue;
+    box-shadow: 0 0 15px 3px #475bf0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    z-index: 9;
+}
+
+.openForm {
+    transition: 1000ms ease;
+    top: 10rem;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+.user__inputs {
+    width: 100;
+    margin: 10px 0;
+}
+
+
+.user__inputs input {
+    border: none;
+    background-color: aliceblue;
+    border-bottom: 1px solid #01062c;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 5px;
+}
+
+.user__inputs label {
+    width: 100;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.form__btn button {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #1e17e8;
+    font-size: 1.1rem;
+}
+
+.form__btn p {
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.form__btn p span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #02445f;
+}
+
+.close__form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #1e17e8;
+    color: #fff;
+    border-radius: 0 12px 0 0;
+}
+
+/* Register Form */
+
+.register__container {
+    position: absolute;
+    top: -50rem;
+    left: 40rem;
+    width: 22%;
+    color: #01062c;
+    background-color: aliceblue;
+    box-shadow: 0 0 15px 3px #475bf0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    z-index: 9;
+    transition: 1000ms ease;
+}
+
+.showRegister {
+    top: 10rem;
+}
+
+/* About Section Starts here */
+
+.about__section {
+    position: absolute;
+    top: -50rem;
+    left: 25rem;
+    z-index: 9;
+    width: 50%;
+    color: #01062c;
+    background: #fff;
+    font-weight: 400;
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #475bf0;
+    transition: 1000ms ease;
+}
+
+.about__section h2{
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
+.showAbout {
+    top: 10rem;
+}
+
+.close__about {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #1e17e8;
+    color: #fff;
+    border-radius: 0 10px 0 0;
+    cursor: pointer;
+}
+
+
+/* Course Cards Starts here */
+
+#couses {
+    padding: 7% 10% 3%;
+}
+
+#couses .course__title {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #01062c;
+    font-weight: bolder;
+}
+
+
+.course__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.course__card__image {
+    width: 100%;
+}
+
+.course__card__image img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.course__card__body {
+    box-shadow: 5px 5px 10px  #c7bdbd;
+    border-radius: 10px;
+}
+
+.course__card__body:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px  #524949;
+}
+
+
+.course__card__details {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.get__course {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px;
+}
+
+.get__course button {
+    padding: 10px 15px;
+    color: #1e17e8;
+    background-color: rgb(183, 225, 255);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.get__course button:hover {
+    color: #fff;
+    background-color: #1e17e8;
+}
+
+
+/* Course Card PopUp */
+
+.get__course__popup {
+    position: absolute;
+    top: -50rem;
+    left: 62.5rem;
+    z-index: 9;
+    color: #01062c;
+    background: #fff;
+    font-weight: 400;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #475bf0;
+}
+
+.get__course__popup h3, p{
+    text-align: center;
+    left: 62.5rem;
+}
+
+.showCoursePopUp {
+    top: 92rem;
+}
+
+
+
+/* Experts Starts here*/
+
+#experts {
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    color: #01062c;
+    padding: 20px;
+}
+
+.experts__title {
+    margin: 50px 0;
+    text-align: center;
+}
+
+
+.experts__title p {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.expert__box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profile__img {
+    width: 200px;
+    height: 200px;
+}
+
+.profile__img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile__description {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.profile__description h4 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.profile__description p {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+/* Footer Starts here */
+
+footer {
+    padding: 3vw 5vw;
+    margin-top: 50px;
+    background-color: #101c32;
+}
+
+.footer__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+footer .footer-col {
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: #f9f9ff;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+    color: #7b838a;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+footer li:hover {
+    color: #f9f9ff;
+    transition: 0.3s ease;
+}
+
+footer li a:hover {
+    color: #f9f9ff;
+    transition: 0.3s ease;
+}
+
+.footer-col .News .yellow {
+    color: #fff;
+    background-color: salmon;
+    transition: 0.36s ease;
+}
+
+.footer-col .News .yellow:hover {
+    color: salmon;
+    background-color: #fff;
+}
+
+footer input {
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    color: #fff;
+}
+
+.copyright  {
+    text-align: center;
+    color: #f9f9ff;
+}
