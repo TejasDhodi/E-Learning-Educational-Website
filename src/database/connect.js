@@ -1,19 +1,10 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv")
 
-// const { MongoClient, ServerApiVersion } = require('mongodb');
-// const uri = "mongodb+srv://TejasDhodi:Tejas755@tj5.qgerxdx.mongodb.net/CourseRegistration?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// }).then(() => {
-//     console.log("connection done");
-// }).catch(() => {
-//     console.log("refuse");
-// });
-  
-mongoose.connect("mongodb+srv://TejasDhodi:Tejas755@tj5.qgerxdx.mongodb.net/UserRegistration?retryWrites=true&w=majority"
+dotenv.config({path: "./.env"})
+
+const DB = process.env.MONGO_URL
+mongoose.connect( DB
 ).then(() => {
     console.log("connection Established");
 });

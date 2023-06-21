@@ -1,4 +1,3 @@
-require('dotenv').config();
 const cookieParser = require("cookie-parser")
 const express = require("express");
 const path = require("path");
@@ -10,6 +9,9 @@ require("./database/connect");
 const Register = require("./models/userRegistrartionSchema");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+
+const dotenv = require("dotenv")
+dotenv.config({path: "./.env"})
 
 app.use(cookieParser());
 
